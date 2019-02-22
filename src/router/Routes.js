@@ -18,7 +18,7 @@ const Root = () => (
               <Route path="/home" component={Home} />
               <Route path="/About" component={About} />
               {/*路由不正确时，默认跳回home页面*/}
-              <Route render={() => <Redirect to="/" />} />
+              <Route render={() => <Redirect to="/About" />} />
             </Switch>
           </App>
         )}
