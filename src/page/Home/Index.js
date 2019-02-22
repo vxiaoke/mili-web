@@ -8,6 +8,7 @@ import banner2 from '../../assets/img-banner2.png';
 import banner3 from '../../assets/img-banner3.png';
 import logoList1 from '../../assets/logo-list1.png';
 import logoList2 from '../../assets/logo-list2.png';
+import qrcode from '../../assets/qrcode.jpg';
 import './Style.css';
 
 export default class Home extends Component {
@@ -70,6 +71,11 @@ export default class Home extends Component {
             <div style={styles.line} />
           </div>
           <img src={logoList2} style={styles.logoList} />
+        </div>
+        <div style={styles.fixedQrcode}>
+          <div style={styles.fixedTitle}>米粒生活全国合伙人火热招募中，关注公众号咨询官方客服！</div>
+          <img src={qrcode} style={styles.qrcodeImg} />
+          <div style={styles.qrcodeText}>微信扫码关注公众号</div>
         </div>
       </div>
     );
@@ -188,5 +194,42 @@ const styles = {
     height: '1px',
     width: '386px',
     background: '#ddd',
+  },
+  fixedQrcode: {
+    position: 'fixed',
+    bottom: '10px',
+    right: '10px',
+    background: '#FFF2F6',
+    width: '234px',
+    height: '249px',
+    borderRadius: '4px',
+    overflow: 'hidden',
+    zIndex: 999,
+    boxShadow: '0px 0px 14px rgba(0, 0, 0, 0.4)'
+  },
+  fixedTitle: {
+    background: '#F731A7',
+    width: '100%',
+    height: '62px',
+    padding: '0 10px',
+    display: 'flex',
+    alignItems: 'center',
+    textAlign: 'center',
+    color: '#fff',
+    fontFamily: 'PingFangSC-Regular',
+    fontSize: '14px',
+    boxSizing: 'border-box',
+  },
+  qrcodeImg: {
+    width: '140px',
+    height: '140px',
+    display: 'block',
+    margin: '10px auto',
+  },
+  qrcodeText: {
+    color: '#666',
+    fontFamily: 'PingFangSC-Regular',
+    fontSize: '12px',
+    textAlign: 'center',
   },
 }
