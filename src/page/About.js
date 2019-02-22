@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-class About extends Component {
+export default class About extends Component {
   render() {
     return (
       <div id="home-container">
@@ -14,4 +14,3 @@ class About extends Component {
   }
 }
 
-export default About;
