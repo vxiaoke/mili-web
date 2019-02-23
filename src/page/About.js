@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import aboutBanner from '../assets/img-about.png';
+import imgBoss from '../assets/img-boss.png';
 
 export default class About extends Component {
   render() {
@@ -30,7 +31,7 @@ export default class About extends Component {
           <div style={styles.bossInfoEnglish}>About Founder</div>
         </div>
         <div style={styles.bossInfoBox}>
-          <img src={aboutBanner} style={styles.bossImg} />
+          <img src={imgBoss} style={styles.bossImg} />
           <div style={styles.bossNameBox}>
             <div style={styles.bossName}>吴云昌</div>
             <div style={styles.bossPosition}>创始人，阿里系创业者</div>
