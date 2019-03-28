@@ -6,7 +6,6 @@ WORKDIR /app
 RUN npm config set user 0
 RUN npm config set unsafe-perm true
 RUN npm config set registry http://registry.npm.taobao.org/
-RUN npm install -g @vue/cli
 
 COPY . /app
 RUN npm install
